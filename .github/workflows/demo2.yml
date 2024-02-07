@@ -9,7 +9,7 @@ jobs:
       - run: echo "job.branch is ${{ github.ref }}"
       - run: echo "job.repository is ${{ github.repository }}"
       - run: echo "job.status is ${{ job.status }}"
-      - run: echo "The workflow is code test on the runner."
+      - name: echo "The workflow is code test on the runner."
         uses: actions/checkout@v2
       - name: List files on repository
         run: |
